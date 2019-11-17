@@ -27,7 +27,7 @@ int NWD(int a, int b) {
 }
 
 int main() {
-    int exmp_amount(1), enter_a(1), enter_b(1), result(0);
+    int exmp_amount(1), enter_a(1), enter_b(1);
 
     exmp_amount = get_number("Enter number of examples (max 10): ", 10);
     cout << endl;
@@ -37,8 +37,7 @@ int main() {
         enter_a = get_number("number1: ", 100);
         enter_b = get_number("number2: ", 100);
 
-        result = enter_a*enter_b/NWD(enter_a,enter_b);
-        cout << result << endl << endl;
+        cout << enter_a*enter_b/NWD(enter_a,enter_b) << endl << endl;
     }
 
     return 0;
