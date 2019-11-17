@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1548925881 source:c:\users\uczeñ.dell-komputer\videos\nowy folder (21e)\snake\main.cpp
+	<iostream>
+	<windows.h>
+
+1551374274 source:g:\szko³a\informatyka\liceum\c++\snake\main.cpp
+	<iostream>
+	<windows.h>
+
