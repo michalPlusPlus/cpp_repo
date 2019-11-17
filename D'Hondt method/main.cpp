@@ -32,9 +32,6 @@ int enter_int (const char* text) {
 int assign_ticket(const vector<typecomitee> all) {
     int max_votes(0), index(0), max_index(0);
     for (const typecomitee co : all) {
-        /* Polsce wybrano nastêpuj¹cy sposób – je¿eli kilka list uzyska³o ilorazy równe ostatniej liczbie z liczb uszeregowanych w podany sposób,
-        a list tych jest wiêcej ni¿ mandatów do rozdzielenia, pierwszeñstwo maj¹ listy w kolejnoœci ogólnej liczby oddanych na nie g³osów.
-        Gdyby na dwie lub wiêcej list oddano równ¹ liczbê g³osów, o pierwszeñstwie rozstrzyga liczba obwodów g³osowania, w których na dan¹ listê oddano wiêksz¹ liczbê g³osów.*/
         if (((co.votes / co.div) > max_votes) || (((co.votes / co.div) == max_votes) && ( co.votes > all[max_index].votes))) {
             max_votes = (co.votes / co.div);
             max_index = index;
