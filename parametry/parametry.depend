@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1542475486 source:c:\users\michael\text files\c++ projects\szkola\parametry\parametry\main.cpp
+	<iostream>
+	<string>
+	<map>
+
+1542915728 source:c:\users\michael\text files\c++ projects\parametry\main.cpp
+	<iostream>
+	<string>
+	<map>
+
