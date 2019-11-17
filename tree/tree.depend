@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1544088855 source:c:\users\uczeñ.dell-komputer\desktop\tree\tree\main.cpp
+	<iostream>
+	<windows.h>
+
+1544118479 source:c:\users\michael\text files\c++ projects\szkola\tree\main.cpp
+	<iostream>
+	<windows.h>
+
