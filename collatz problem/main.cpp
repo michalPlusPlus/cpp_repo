@@ -18,19 +18,19 @@ int main()
 
     while (a!=1) {
         if (a%2==1) {
-            steps = steps+1;
+            steps+=1;
             a = 3*a+1;
             cout << a << endl;
         }
         else {
-            steps = steps+1;
-            a = a/2;
+            steps+=1;
+            a/=2;
             cout << a << endl;
         }
     }
 
     cout << "\n";
-    cout << "Steps made: " << steps;
+    cout << "Steps made: " << steps << endl << endl;
 
     return 0;
 }
