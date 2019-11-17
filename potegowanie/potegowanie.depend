@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1572958666 source:c:\users\uczen\videos\21 e\potegowanie\main.cpp
+	<iostream>
+	<conio.h>
+	<math.h>
+
+1572958666 
+
+1572963924 source:/home/michal1/Dokumenty/C++/potegowanie/main.cpp
+	<iostream>
+	<math.h>
+	<conio.h>
+
+1573147247 source:c:\users\michael\text files\c++ projects\potegowanie_org\main.cpp
+	<iostream>
+	<math.h>
+	<conio.h>
+
+1573163546 source:c:\users\michael\text files\c++ projects\potegowanie\main.cpp
+	<iostream>
+	<vector>
+	<math.h>
+
