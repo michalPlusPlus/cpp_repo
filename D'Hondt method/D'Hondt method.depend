@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1558724669 source:c:\users\micha\documents\c++ projects\d'hondt method\main.cpp
+	<iostream>
+
+1558981451 source:c:\users\michael\text files\c++ projects\d'hondt method\main.cpp
+	<iostream>
+	<string>
+	<vector>
+
