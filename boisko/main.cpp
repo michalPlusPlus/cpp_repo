@@ -67,9 +67,8 @@ void players () {
 }
 
 
-int main()
-{
-    int t=80;
+int main() {
+    int t(80);
 
     // ball pass 1 -> 2
     for (int j=8; j<22; j++) {
@@ -129,7 +128,7 @@ int main()
 
 
     gotoxy (1, 22);
-    cout << "\n";
+    cout << endl;
 
     return 0;
 }
