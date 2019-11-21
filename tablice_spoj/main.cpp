@@ -1,11 +1,10 @@
 #include <iostream>
 #include <vector>
-#include <cstdio>
 
 
 using namespace std;
 
-int exmp_amount(1), num_amount(2); //num_cache(0);
+int exmp_amount(1), num_amount(2);
 string locl_cache;
 vector <string> vec_numbers;
 
