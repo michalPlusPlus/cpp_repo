@@ -9,12 +9,40 @@ void gotoxy (int x, int y) {
     c.Y = y-1;
     SetConsoleCursorPosition (GetStdHandle (STD_OUTPUT_HANDLE), c);
 }
+/*
+int get_number(const char* text, const int max_val) {
+    int gn(1);
+    do {
+        cout << text;
+        cin.clear();
+        cin.sync();
+        cin >> gn;
+    }
+    while(cin.fail() || gn<1 || gn>max_val);
+    return gn;
+}*/
 
-int main()
-{
-    int i,j, t(70);
+int main() {
+    int speed(80);
 
-    for (i=1; i<10; i++) {
+    /*int_speed = get_number("Enter the snake speed (1, 2 or 3): ", 3);
+
+    switch (int_speed) {
+    case 1:
+        speed==80;
+        break;
+    case 2:
+        speed==50;
+        break;
+    case 3:
+        speed==10;
+        break;
+    default:
+    cout << "Value out of range." << endl;
+    break;
+    }*/
+
+    for (int i=1; i<10; i++) {
         gotoxy (i, 5);
         if (i%2==0) {
             cout << "0~";
@@ -22,7 +50,7 @@ int main()
         else {
             cout << "0~~";
         }
-        for (j=1; j<i; j++) {
+        for (int j=1; j<i; j++) {
             if (j%2==0) {
                 gotoxy (j, 5);
                 cout << "\\";
@@ -32,11 +60,11 @@ int main()
                 cout << "/";
             }
         }
+        Sleep (speed);
         system ("cls");
-        Sleep (t);
     }
 
-    for (i=1; i<85; i++) {
+    for (int i=1; i<85; i++) {
         gotoxy (i, 5);
 
         if (i%2==0) {
@@ -46,26 +74,11 @@ int main()
             cout << "\\/\\/\\/\\/\\/0~~";
         }
 
-        Sleep (t);
+        Sleep (speed);
         system ("cls");
 
     }
-    Sleep (t);
-
-    /*for (i=21; i<30; i++) {
-        for (j=10; j>0; j--) {
-            if (j%2==0) {
-                gotoxy (i, 5);
-                cout << "\\";
-            }
-            else {
-                gotoxy (i, 5);
-                cout << "/";
-            }
-        }
-        system ("cls");
-        Sleep (t);
-    }*/
+    Sleep (speed);
 
     return 0;
 }
