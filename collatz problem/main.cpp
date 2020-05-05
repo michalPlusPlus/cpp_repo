@@ -2,35 +2,47 @@
 
 using namespace std;
 
-int main()
-{
-    int a(0), steps(0);
-
+//function to avoid non-int data and data out of given interval
+int get_number(const char* text, const int min_val, const int max_val) {
+    int gn(1);
     do {
-        cout << "Enter number (above 1): ";
+        cout << text;
         cin.clear();
         cin.sync();
-        cout << "\n";
-        cin >> a;
+        cin >> gn;
     }
-    while (cin.fail() || a<2);
+    while(cin.fail() || gn<min_val || gn>max_val);
+    return gn;
+}
 
+int main() {
+    int exmp_amnt(1), num(1), steps(0);
 
-    while (a!=1) {
-        if (a%2==1) {
-            steps+=1;
-            a = 3*a+1;
-            cout << a << endl;
+    //entering examples amount
+    exmp_amnt = get_number("Enter examples amount: ", 1, 10);
+
+    //entering number to consider
+    for (int e=0; e<exmp_amnt; e++) {
+        num = get_number("Enter number: ", 1, 10000);
+
+        //executing given algorithm
+        while (num!=1) {
+            if (num%2==1) {
+                steps+=1;
+                num = 3*num+1;
+                cout << num << endl;
+            }
+            else {
+                steps+=1;
+                num/=2;
+                cout << num << endl;
+            }
         }
-        else {
-            steps+=1;
-            a/=2;
-            cout << a << endl;
-        }
+
+        cout << "Steps made: " << steps << endl << endl;
+
+        steps=0; //reseting
     }
-
-    cout << "\n";
-    cout << "Steps made: " << steps << endl << endl;
 
     return 0;
 }
