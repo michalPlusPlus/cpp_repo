@@ -1,1 +1,1 @@
-# cpp_repo
+# cpp_szkola
